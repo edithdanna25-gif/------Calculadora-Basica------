@@ -3,7 +3,6 @@ Descripción
 Este programa es una calculadora básica desarrollada en lenguaje Python, capaz de realizar operaciones aritméticas como suma, resta, multiplicación y división con números enteros y decimales.
 A diferencia de las calculadoras que solo permiten operar con dos números a la vez, este programa acepta expresiones más largas en una sola línea. 
 En su versión actual se implementa una jerarquía básica de operaciones, donde primero se resuelven multiplicaciones y divisiones, y posteriormente sumas y restas.
-Para lograrlo, la expresión ingresada se procesa convirtiéndola en una lista de números y operadores. Posteriormente, el programa realiza dos recorridos: el primero para resolver * y /, y el segundo para resolver + y - de forma secuencial.
 Además, el programa incluye la función ANS, que almacena el último resultado obtenido, permitiendo reutilizarlo en nuevas operaciones sin necesidad de volver a escribirlo.
 
 
@@ -11,7 +10,7 @@ Partes implementadas
 
 1. Interfaz gráfica: la interfaz del programa fue desarrollada con Tkinter en Python. La ventana principal incluye una pantalla para mostrar la expresión matemática y el resultado, junto con botones organizados para el uso de la calculadora.
 Estos botones permiten ingresar números del 0 al 9, punto decimal, operaciones básicas (suma, resta, multiplicación y división), además de funciones como igual (=), borrar todo (C), borrar un carácter (⌫), ANS, y opciones para ver y borrar el historial.
-También se añadió una ventana secundaria que muestra el historial de operaciones, donde se visualizan los cálculos realizados junto con su resultado y la fecha y hora en que fueron registrados.
+También se añadió una ventana secundaria que muestra el historial de operaciones, donde se visualizan los cálculos realizados junto con su resultado,fecha y hora en que fueron registrados.
 
 2. Lógica: la lógica del programa evalúa expresiones matemáticas respetando una jerarquía básica de operaciones. Para ello, la expresión ingresada se convierte en una lista de números y operadores, que posteriormente se procesa en dos etapas:
    1. Primero se resuelven todas las multiplicaciones y divisiones en el orden en que aparecen.
