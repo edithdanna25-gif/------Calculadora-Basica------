@@ -16,7 +16,9 @@ También se añadió una ventana secundaria que muestra el historial de operacio
 2. Lógica: la lógica del programa evalúa expresiones matemáticas respetando una jerarquía básica de operaciones. Para ello, la expresión ingresada se convierte en una lista de números y operadores, que posteriormente se procesa en dos etapas:
    1. Primero se resuelven todas las multiplicaciones y divisiones en el orden en que aparecen.
    2. Después se resuelven las sumas y restas de izquierda a derecha.
+      
 Esto permite simular la prioridad de operaciones sin utilizar estructuras avanzadas.
+
 El botón ANS permite reutilizar el último resultado obtenido. Cada vez que se presiona “=”, el resultado se guarda en una variable (ans). Al usar ANS, este valor se inserta en la expresión como si hubiera sido escrito manualmente, integrándose como un número más dentro del cálculo.
 El manejo de errores se realiza mediante bloques try-except, lo que permite detectar expresiones inválidas, errores de formato o divisiones entre cero.
 
